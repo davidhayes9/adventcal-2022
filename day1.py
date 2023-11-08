@@ -23,14 +23,6 @@ for elf in range(len(cal_array)):
     
     dict_total_cal[elf_name] = total
 
-# Use the 'max()' function to find the key (elf) with the maximum value (cals).
-#highest_cals = max(dict_total_cal, key=dict_total_cal.get)
-
-# print the result
-#print("Highest cals is ", highest_cals, " with ", dict_total_cal[highest_cals])
-
-#sorted_dict_total_cal = sorted(dict_total_cal.values(), key=dict_total_cal.get, reverse=True)
-
 # sort dict by largest value 
 sorted_dict_total_cal = sorted(dict_total_cal.items(), key=lambda item: item[1])
 
