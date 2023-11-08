@@ -20,12 +20,12 @@ for elf in range(len(cal_array)):
         total += int(cal)
     
     elf_name = 'Elf ' + str(elf + 1)
-    
+
     dict_total_cal[elf_name] = total
+
 
 # sort dict by largest value 
 sorted_dict_total_cal = sorted(dict_total_cal.items(), key=lambda item: item[1])
-
 
 top_three_elf_cals = list(sorted_dict_total_cal)[-3:]
 
